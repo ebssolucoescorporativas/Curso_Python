@@ -9,7 +9,7 @@ def aumenta_10_por_cento(lista):
     ]
 
     return [
-         {**produto, 'preco': produto['preco'] * 1.10}
+         {**produto, 'preco': round(produto['preco'] * 1.10,2)}
         for produto in produtos
     ]
 
